@@ -1,0 +1,29 @@
+# LimboCaptcha Configuration
+
+# Google reCAPTCHA settings
+captcha:
+  # Your reCAPTCHA site key
+  site-key: "your-site-key-here"
+  # Your reCAPTCHA secret key
+  secret-key: "your-secret-key-here"
+  # reCAPTCHA verification URL
+  verify-url: "https://www.google.com/recaptcha/api/siteverify"
+  # Your captcha page domain
+  domain: "https://your-domain.com/captcha"
+
+# Limbo server settings
+limbo:
+  # Name of the limbo world (from LimboAPI config)
+  world-name: "captcha"
+
+# Messages
+messages:
+  captcha-title: "&6&lVerification Required"
+  captcha-subtitle: "&ePlease complete captcha to continue"
+  captcha-chat: "&7[&6Captcha&7] &fPlease complete the captcha:"
+  captcha-link: "&7[&6Captcha&7] &b&n%link%"
+  captcha-success: "&aCaptcha passed! Redirecting to authorization..."
+  captcha-fail: "&cCaptcha verification failed!"
+  captcha-timeout: "&cCaptcha verification timed out!"
+  kick-message: "&cYou failed the captcha verification!"
+  already-verified: "&aYou are already verified!"
